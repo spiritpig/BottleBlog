@@ -1,0 +1,21 @@
+" Press <F1> for help
+
+-[F]BottleBlog {
+ |-[F]db {
+ | |-blogDb.db
+ | |-fillDb.sql }
+ |
+ |-[F]js {
+ | |-main.js }
+ |
+ |-[F]script {
+ | |-main.py }
+ |
+ |-[F]style {
+ | |-style.css }
+ |
+ |-BottleBlog.exvim
+ |-index.tpl
+ |-sqlite3.exe }
+
+

@@ -1,7 +1,12 @@
 .\BottleBlog.exvim
-.\index.html
+.\db
+.\index.tpl
 .\js
-.\main.py
+.\script
+.\sqlite3.exe
 .\style
+.\db\blogDb.db
+.\db\fillDb.sql
 .\js\main.js
+.\script\main.py
 .\style\style.css

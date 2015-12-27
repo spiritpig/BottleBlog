@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="description" content="MyBlog">
-        <title>Blog for fantasty</title>
+        <title>Blog for {{name}}</title>
         <link type="text/css" rel="stylesheet" href="style/style.css">
     </head>
     <body>

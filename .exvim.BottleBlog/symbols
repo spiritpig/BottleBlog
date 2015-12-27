@@ -1,4 +1,11 @@
+article
+article.content
+article.describ
+article.id
+article.title
 greet
 route
 run
+server_static
+static_file
 template

@@ -4,7 +4,14 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-greet	.\main.py	/^def greet(name='Stranger'):$/;"	f	access:public
-route	.\main.py	/^from bottle import route, run, template$/;"	i
-run	.\main.py	/^from bottle import route, run, template$/;"	i
-template	.\main.py	/^from bottle import route, run, template$/;"	i
+article	.\db\fillDb.sql	/^CREATE TABLE article$/;"	t
+article.content	.\db\fillDb.sql	/^    content TEXT$/;"	F
+article.describ	.\db\fillDb.sql	/^    describ TEXT, $/;"	F
+article.id	.\db\fillDb.sql	/^    id INTEGER PRIMARY KEY, $/;"	F
+article.title	.\db\fillDb.sql	/^    title TEXT, $/;"	F
+greet	.\script\main.py	/^def greet(name='Stranger'):$/;"	f	access:public
+route	.\script\main.py	/^from bottle import route, run, template, static_file$/;"	i
+run	.\script\main.py	/^from bottle import route, run, template, static_file$/;"	i
+server_static	.\script\main.py	/^def server_static(filename):$/;"	f	access:public
+static_file	.\script\main.py	/^from bottle import route, run, template, static_file$/;"	i
+template	.\script\main.py	/^from bottle import route, run, template, static_file$/;"	i
