@@ -2,7 +2,6 @@
 
 -[F]BottleBlog {
  |-[F]db {
- | |-blogDb.db
  | |-fillDb.sql }
  |
  |-[F]js {
@@ -15,7 +14,6 @@
  | |-style.css }
  |
  |-BottleBlog.exvim
- |-index.tpl
- |-sqlite3.exe }
+ |-index.tpl }
 
 

@@ -13,7 +13,7 @@ project_name = 'BottleBlog'
 -- File And Folder Filters:
 folder_filter_mode = include -- { include, exclude }
 folder_filter +=
-file_filter +=
+file_filter += tpl,html,css,js,py,sql,exvim
 file_ignore_pattern +=
 
 -- Editing:

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="description" content="MyBlog">
-        <title>Blog for {{name}}</title>
+        <title>Blog for $name</title>
         <link type="text/css" rel="stylesheet" href="style/style.css">
     </head>
     <body>
@@ -36,6 +36,14 @@
             </div>
             <div id="mainBox">
                 <div id="mainContent">
+                    <ul>
+                        {% for article in articles: %}
+                        <li>
+                            <span>{{article[0]}}</span>
+                            <p>{{article[1]}}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
                 <div id="sideBar">
                 </div>
