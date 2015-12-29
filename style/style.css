@@ -1,8 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: white;
-
+    background-color: #f4f6f8;
+    font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif;
 }
 
 #wrapper{
@@ -128,7 +128,6 @@ li{
 #mainBox{
     height: 91%;
     width: 100%;
-    background-color: red;
     display: -webkit-flex;
     display: -moz-flex;
     display: flex;
@@ -137,7 +136,50 @@ li{
 #mainContent{
     width: 80%;
     height: 100%;
-    background-color: blue;
+}
+
+#artiList{
+    margin: 0;
+    padding: 0;
+}
+
+#artiList li{
+    background-color: white;
+    text-align: left;
+    min-height: 100px;
+    margin: 0;
+    padding-top: 2px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#artiList li a{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+#artiList li p{
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+#artiList li a:hover{
+    color: #00beff;
+}
+
+#artiList li #bottomTip{
+    padding: 10px 0 0 10px;
+    background-color: #f4f4f4;
+}
+
+#artiList li #bottomTip span{
+    font-size: 12px;
+    margin-right: 20px;
+    color: #777;
 }
 
 #sideBar{

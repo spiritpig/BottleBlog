@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="description" content="MyBlog">
-        <title>Blog for $name</title>
+        <title>Blog for {{name}}</title>
         <link type="text/css" rel="stylesheet" href="style/style.css">
     </head>
     <body>
@@ -36,11 +36,15 @@
             </div>
             <div id="mainBox">
                 <div id="mainContent">
-                    <ul>
+                    <ul id="artiList">
                         {% for article in articles: %}
                         <li>
-                            <span>{{article[0]}}</span>
+                            <a href="#">{{article[0]}}</a>
                             <p>{{article[1]}}</p>
+                            <div id="bottomTip">
+                                <span id="src">大象网</span>
+                                <span id="time">2015-4-8</span>
+                            </div>
                         </li>
                         {% endfor %}
                     </ul>
