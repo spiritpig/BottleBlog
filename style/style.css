@@ -9,8 +9,7 @@ body{
     margin: 0 auto;
     left: 50%;
     text-align: center;
-    align: center;
-    width: 800px;
+    width: 75%;
     height: 600px;
 
     border: 2px solid lightblue;
@@ -33,43 +32,30 @@ li{
     list-style: none outside none;
 }
 
-#Menu{
-    margin: 0 auto;
-    padding: 0px;
-    width: auto;
+#menu{
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     display: table;
-    box-shadow: 0 5px 5px rgba(1, l, 1, 0.5);
 
-    background: #4c4e5a;
-    background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
-    background: -moz-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
-    background: -o-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
-    background: -ms-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
-    background: linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
-
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    background: #c22727;
 }
 
-#Menu li{
+#menu li{
     float: left;
     position: relative;
 }
 
-#Menu li a{
+#menu li a{
     text-decoration: none;
 
-    margin: 6px 0;
     padding: 0 14px;
     display: block;
-    line-height: 28px;
-    border-left: 1px solid #393942;
-    border-right: 1px solid #4f5058;
+    line-height: 38px;
 
     font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
+    font-size: 18px;
 
     color: #f3f3f3;
     text-shadow: 1px 1px 1px rgba(0,0,0,.6);
@@ -81,30 +67,30 @@ li{
     transition: color .2s ease-in-out;
 }
 
-#Menu li:hover > a { color: #8fde62; }
-#Menu li:first-child a { border-left: none; }
-#Menu li:last-child a { border-right: none; }
+#menu li:hover > a { color: #8fde62; }
+#menu li:first-child a { border-left: none; }
+#menu li:last-child a { border-right: none; }
 
-#Menu ul li{
+#menu ul li{
     height: 0px;
     overflow: hidden;
     padding: 0px;
 }
 
-#Menu li:hover > ul li {
+#menu li:hover > ul li {
     height: auto;
     overflow: visible;
     padding: 0px 10px;
 }
 
-#Menu ul {
+#menu ul {
     float: left;
     display: table;
     position: absolute;
-    background: gray;
     padding: 0px;
     margin: 0px;
-    background: #1f2024;
+
+    background: #c22727;
 
     -webkit-border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
@@ -117,17 +103,28 @@ li{
     transition: opacity .25s ease .1s;
 }
 
-#Menu ul li:hover > a { color: #8fde62; }
-#Menu ul li:last-child a { border: none; }
+#menu ul li:hover > a { color: #8fde62; }
+#menu ul li:last-child a { border: none; }
 
-#Menu ul li a{
+#menu ul li a{
     border: none;
     border-bottom: 1px solid #353539;
 }
 
+#menu #logoItem a img{
+
+    height: 54px;
+    margin: 0;
+    padding: 0;
+    display: table;
+}
+
 #mainBox{
+    padding-top: 2px;
     height: 91%;
     width: 100%;
+
+    // 保证内容是左右排列的
     display: -webkit-flex;
     display: -moz-flex;
     display: flex;
@@ -153,11 +150,21 @@ li{
 }
 
 #artiList li a{
+    display: block;
     font-size: 20px;
     font-weight: bold;
     color: black;
     padding-left: 10px;
     text-decoration: none;
+
+    border-left: 3px solid #ff0000;
+    border-top: 1px dashed #ff0000;
+    border-bottom: 1px dashed #ff0000;
+}
+
+#artiList li a:hover{
+    color: #00beff;
+    text-decoration: underline;
 }
 
 #artiList li p{
@@ -167,13 +174,8 @@ li{
     padding-left: 10px;
 }
 
-#artiList li a:hover{
-    color: #00beff;
-}
-
 #artiList li #bottomTip{
     padding: 10px 0 0 10px;
-    background-color: #f4f4f4;
 }
 
 #artiList li #bottomTip span{
@@ -183,8 +185,10 @@ li{
 }
 
 #sideBar{
-    float: right;
     width: 20%;
     height: 100%;
-    background-color: yellow;
+    background-color: lightgray;
+    text-align:left;
+    margin-left: 5px;
+    padding-left: 5px;
 }

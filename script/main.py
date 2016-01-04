@@ -7,7 +7,7 @@ from bottle import jinja2_view as view, jinja2_template as template
 def greet(name='Stranger'):
     articleDB = sqlite3.connect('db/blogDb.db')
     c = articleDB.cursor()
-    c.execute("SELECT title, describ from article;")
+    c.execute("SELECT title, describ, content from article;")
     rows = c.fetchall()
     c.close()
     return template('index', name=name, articles=rows)
@@ -15,5 +15,9 @@ def greet(name='Stranger'):
 @route('/hello/<filename:path>')
 def server_static(filename):
     return static_file(filename, root='.')
+
+@route('/hello/firstArticle')
+def getArticle():
+    return "第一篇文章"
 
 run(host='localhost', port=8080, debug=True)

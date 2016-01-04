@@ -5,13 +5,16 @@
         <title>Blog for {{name}}</title>
         <link type="text/css" rel="stylesheet" href="style/style.css">
     </head>
-    <body>
+    <body onload="init()">
         <div id="wrapper">
             <div id="upperBox">
-                <ul id="Menu">
+                <ul id="menu">
+                    <li id="logoItem">
+                        <a href="#"><img src="image\logo.png"></img></a>
+                    </li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Menu1</a></span>
-                        <ul id="SubMenu">
+                        <ul id="subMenu">
                             <li><a href="#">SubMenu1</a></li>
                             <li><a href="#">SubMenu2</a></li>
                             <li><a href="#">SubMenu3</a></li>
@@ -20,7 +23,7 @@
                     </li>
                     <li>
                         <a href="#">Menu2</a>
-                        <ul id="SubMenu2">
+                        <ul id="subMenu">
                             <li><a href="#">SubMenu1</a></li>
                             <li><a href="#">SubMenu2</a></li>
                             <li><a href="#">SubMenu3</a></li>
@@ -39,7 +42,7 @@
                     <ul id="artiList">
                         {% for article in articles: %}
                         <li>
-                            <a href="#">{{article[0]}}</a>
+                            <a href="{{article[2]}}">{{article[0]}}</a>
                             <p>{{article[1]}}</p>
                             <div id="bottomTip">
                                 <span id="src">大象网</span>
@@ -50,6 +53,13 @@
                     </ul>
                 </div>
                 <div id="sideBar">
+                    <div id="clockRange">
+                        <span id="clockHint">时间: </span>
+                        <span id="clock">00:00:00</span>
+                    </div>
+
+                    <div>
+                    </div>
                 </div>
             </div>
         </div>
