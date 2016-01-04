@@ -7,13 +7,16 @@
  |-[F]js {
  | |-main.js }
  |
+ |-[F]page {
+ | |-firstArticle.tpl
+ | |-index.tpl }
+ |
  |-[F]script {
  | |-main.py }
  |
  |-[F]style {
  | |-style.css }
  |
- |-BottleBlog.exvim
- |-index.tpl }
+ |-BottleBlog.exvim }
 
 

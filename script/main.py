@@ -10,7 +10,7 @@ def greet(name='Stranger'):
     c.execute("SELECT title, describ, content from article;")
     rows = c.fetchall()
     c.close()
-    return template('index', name=name, articles=rows)
+    return template('page/index', name=name, articles=rows)
 
 @route('/hello/<filename:path>')
 def server_static(filename):
@@ -18,6 +18,6 @@ def server_static(filename):
 
 @route('/hello/firstArticle')
 def getArticle():
-    return "第一篇文章"
+    return template('page/firstArticle')
 
 run(host='localhost', port=8080, debug=True)
