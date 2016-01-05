@@ -4,14 +4,28 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-article	.\db\fillDb.sql	/^CREATE TABLE article$/;"	t
+adjustTimeVal	.\js\main.js	/^    function adjustTimeVal(i)$/;"	r
+article	.\db\fillDb.sql	/^﻿CREATE TABLE article($/;"	t
 article.content	.\db\fillDb.sql	/^    content TEXT$/;"	F
 article.describ	.\db\fillDb.sql	/^    describ TEXT, $/;"	F
 article.id	.\db\fillDb.sql	/^    id INTEGER PRIMARY KEY, $/;"	F
 article.title	.\db\fillDb.sql	/^    title TEXT, $/;"	F
+getArticle	.\script\main.py	/^def getArticle():$/;"	f	access:public
 greet	.\script\main.py	/^def greet(name='Stranger'):$/;"	f	access:public
+hour	.\js\main.js	/^        var hour = today.getHours()$/;"	r
+i	.\js\main.js	/^            i = "0" + i$/;"	r
+init	.\js\main.js	/^function init()$/;"	r
+minute	.\js\main.js	/^        minute = adjustTimeVal(minute)$/;"	r
+minute	.\js\main.js	/^        var minute = today.getMinutes()$/;"	r
 route	.\script\main.py	/^from bottle import route, run, template, static_file$/;"	i
 run	.\script\main.py	/^from bottle import route, run, template, static_file$/;"	i
+second	.\js\main.js	/^        second = adjustTimeVal(second)$/;"	r
+second	.\js\main.js	/^        var second = today.getSeconds()$/;"	r
 server_static	.\script\main.py	/^def server_static(filename):$/;"	f	access:public
+sqlite3	.\script\main.py	/^import sqlite3$/;"	i
 static_file	.\script\main.py	/^from bottle import route, run, template, static_file$/;"	i
+template	.\script\main.py	/^from bottle import jinja2_view as view, jinja2_template as template$/;"	i
 template	.\script\main.py	/^from bottle import route, run, template, static_file$/;"	i
+today	.\js\main.js	/^        var today = new Date()$/;"	r
+updateClock	.\js\main.js	/^    function updateClock()$/;"	r
+view	.\script\main.py	/^from bottle import jinja2_view as view, jinja2_template as template$/;"	i
