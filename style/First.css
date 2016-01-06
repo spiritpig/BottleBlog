@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif;
+}
+
+#wrapper{
+    margin: 0 auto;
+    left: 50%;
+    text-align: center;
+    width: 75%;
+
+    background-color: lightyellow;
+
+    border: 3px solid darkgray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#upperBox{
+    width: 100%;
+    height: 9%;
+}
+
+li{
+    list-style: none outside none;
+}
+
+#menu{
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+
+    background: #c22727;
+}
+
+#menu li{
+    float: left;
+    position: relative;
+}
+
+#menu li a{
+    text-decoration: none;
+
+    padding: 0 14px;
+    display: block;
+    line-height: 38px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+
+    color: #f3f3f3;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+#menu li:hover > a { color: #8fde62; }
+#menu li:first-child a { border-left: none; }
+#menu li:last-child a { border-right: none; }
+
+#menu ul li{
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+#menu li:hover > ul li {
+    height: auto;
+    overflow: visible;
+    padding: 0px 10px;
+}
+
+#menu ul {
+    float: left;
+    display: table;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+
+    background: #c22727;
+
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+}
+
+#menu ul li:hover > a { color: #8fde62; }
+#menu ul li:last-child a { border: none; }
+
+#menu ul li a{
+    border: none;
+    border-bottom: 1px solid #353539;
+}
+
+#menu #logoItem a img{
+
+    height: 54px;
+    margin: 0;
+    padding: 0;
+    display: table;
+}
+
+#mainBox{
+    padding-top: 2px;
+    height: 91%;
+
+    // 保证内容是左右排列的
+    display: -webkit-flex;
+    display: flex;
+}
+
+#mainContent{
+    width: 80%;
+    text-align:left;
+
+    // 保证内容是左右排列的
+    display: -webkit-flex;
+    display: flex;
+
+    flex-direction: column;
+}
+
+#imgBox{
+    text-align: center;
+}
+
+#mainContent pre{
+    font-family:"Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif;
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+}
+
+#sideBar{
+    width: 20%;
+    min-height: 100%;
+    background-color: lightgray;
+    text-align:left;
+    margin-left: 5px;
+    padding-left: 5px;
+}

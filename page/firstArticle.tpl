@@ -3,14 +3,14 @@
     <head>
         <meta name="description" content="MyBlog">
         <title>Blog for {{name}}</title>
-        <link type="text/css" rel="stylesheet" href="style/style.css">
+        <link type="text/css" rel="stylesheet" href="style/first.css">
     </head>
     <body onload="init()">
         <div id="wrapper">
             <div id="upperBox">
                 <ul id="menu">
                     <li id="logoItem">
-                        <a href="#"><img src="image\logo.png"></img></a>
+                        <a href="#"><img src="image/logo.png"></img></a>
                     </li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Menu1</a></span>
@@ -38,16 +38,17 @@
                 </ul>
             </div>
             <div id="mainBox">
-                <div id="mainContent" style="text-align:left; overflow:auto;">
+                <div id="mainContent" >
                     <p>自从炉石传说推出地精大战侏儒后，机械成了时代的主流，下面我们就顺应潮流，为大家带来一套炉石传说黑科技大头机械贼卡组。
 					</p>
-                    <div style="text-align:center">
-					<img src="image/seaf.png" align="center"></img>
+                    <div id="imgBox">
+					<img src="image/seaf.png"></img>
                     </div>
 					<p>
                     这套卡组最科学的叫法应该叫：大胖机械贼，我称之为大头贼（因为里面有大胖，
                     火车头等逗X卡），但是决不是娱乐卡组，胜率完全有保证。
                     </p>
+                    <br />
                     <h4>【卡组思路】</h4>
                     <p>
                     此卡组是获胜关键是铺场而不是combo，当然合理的combo是必须的，切莫为了组
@@ -59,8 +60,9 @@
                     盗贼前期解场能力非常强，无论卖血还是亏卡都无所谓利用这点，完成解场铺场。
                     利用相互的BUFF，让各个相对弱的随从变得让对手头疼与难解。
                     </p>
+                    <br />
                     <h4>【单卡解析】</h4>
-<pre style='font-family:"Helvetica Neue",Helvetica,Tahoma,Arial,STXihei,"Microsoft YaHei","微软雅黑",sans-serif;'>背刺：不用解释了，没见过一套不带此卡的盗贼。
+<pre >背刺：不用解释了，没见过一套不带此卡的盗贼。
 致命毒药：单独使用3攻，配合扳手5攻，配合乱舞全场aoe,不用解释。
 齿轮大师：此卡很强。比如1费上场，2费上个吵吵，3攻单杀目前最受欢迎的载人收割机。
 剑刃乱舞：带了两张，为了提高对阵圣骑的胜率。更何况效果确实好。

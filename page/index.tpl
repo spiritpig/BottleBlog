@@ -10,7 +10,7 @@
             <div id="upperBox">
                 <ul id="menu">
                     <li id="logoItem">
-                        <a href="#"><img src="image\logo.png"></img></a>
+                        <a href="#"><img src="image/logo.png"></img></a>
                     </li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Menu1</a></span>
